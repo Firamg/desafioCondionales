@@ -1,0 +1,22 @@
+p{
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    height: 15em;
+    width: 15em;
+}
+
+.gallery{
+    display: flex;
+    height: 15em;
+    align-items: center;
+    text-align: center;
+}
+
+.btn{
+    text-align: center;
+    align-items: center;
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: Stickers</title>
+    <link rel="stylesheet" href="assets/css/stickers.css">
+</head>
+<body>
+    <p id="title">Puedes llevar hasta 10 stickers en total</p>
+    <div class="gallery">
+        <div class="obj1">
+            <img src="assets/img/stickers/img1.png" alt="pride1">
+            <input class="cnt1" type="text" placeholder="Ingresa cantidad de stickers">
+
+        </div>
+        <div class="obj2">
+            <img src="assets/img/stickers/img2.png" alt="pride2">
+            <input class="cnt2" type="text" placeholder="Ingresa cantidad de stickers">
+
+        </div>
+        <div class="obj3">
+            <img src="assets/img/stickers/img3.png" alt="pride3">
+            <input class="cnt3" type="text" placeholder="Ingresa cantidad de stickers">
+
+        </div>
+        
+       
+    </div>
+    <p >Llevas <span class="totals">X</span> stickers</p>
+    <div class="btn">
+        <button class="button" onclick="
+        alert('Hiciste click')
+        stk1=document.querySelector('.cnt1').value
+        stk2=document.querySelector('.cnt2').value
+        stk3=document.querySelector('.cnt3').value
+        alert('Calculando...')
+        ttl=Number(stk1)+Number(stk3)+Number(stk3)
+        alert(ttl)
+        total=document.querySelector('.totals')
+        if (ttl<=10){
+            
+
+            total.innerHTML=ttl
+
+        }
+        else{
+
+            total.innerHTML='demasiados'
+        }
+        
+
+        "
+        >Verificar</button>
+    </div>
+    
+    
+</body>
+</html>
